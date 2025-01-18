@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <!-- ImageView for the image -->
+    <ImageView
+        android:id="@+id/img_component_image"
+        android:layout_width="53dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image_soft_hard_ware" />
+
+    <!-- Texts in a vertical layout -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- TextView for component description -->
+        <TextView
+            android:id="@+id/tv_component_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:text="Component Description"
+            android:textSize="16sp" />
+
+        <!-- TextView for quantity -->
+        <TextView
+            android:id="@+id/tv_component_quantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quantity"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,4 @@
+id,type,soustype,description,quantity,voltage,wattage,dimensions,price
+1,Hardware,carte graphique,RTX3050ti,3,70,40,50x50,1090
+2,Hardware,processeur,intel i9,9,39,83,30x30,999
+3,Software,AndroidStudio,Application de developpement,99,v3.3,OpenJDK,Windows11,34

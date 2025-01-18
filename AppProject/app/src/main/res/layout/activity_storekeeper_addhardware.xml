@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/scroll1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f7f7f7"
+        tools:context=".StorekeeperActivity">
+
+        <Button
+            android:id="@+id/add_but3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="50dp"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/alata"
+            android:onClick="addComponent"
+            android:text="Next"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/logoutbutton_id9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText32"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <EditText
+            android:id="@+id/editTextNumber6"
+            android:layout_width="194dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="45dp"
+            android:ems="10"
+            android:fontFamily="@font/alata"
+            android:hint="ex : "
+            android:inputType="number"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText31" />
+
+        <Button
+            android:id="@+id/button13"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="52dp"
+            android:onClick="increment"
+            android:text="+"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText34" />
+
+        <TextView
+            android:id="@+id/textView111"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="*"
+            android:textColor="#C31111"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/textView116"
+            app:layout_constraintTop_toBottomOf="@+id/textView115" />
+
+        <TextView
+            android:id="@+id/textView112"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="42dp"
+            android:text="*"
+            android:textColor="#C31111"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/textView130"
+            app:layout_constraintTop_toBottomOf="@+id/textView122" />
+
+        <TextView
+            android:id="@+id/textView113"
+            android:layout_width="9dp"
+            android:layout_height="18dp"
+            android:text="*"
+            android:textColor="#C31111"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/textView127"
+            app:layout_constraintTop_toBottomOf="@+id/textView119" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText31"
+            android:layout_width="194dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="45dp"
+            android:fontFamily="@font/alata"
+            android:hint="ex : "
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText36" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText32"
+            android:layout_width="194dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="45dp"
+            android:fontFamily="@font/alata"
+            android:hint="ex : "
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNumber6" />
+
+        <TextView
+            android:id="@+id/textView114"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/alata"
+            android:text="Commentaire"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView120" />
+
+        <TextView
+            android:id="@+id/textView115"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="67dp"
+            android:fontFamily="@font/alata"
+            android:text="Type"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView119" />
+
+        <TextView
+            android:id="@+id/textView116"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/alata"
+            android:text="Sous-type"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView115" />
+
+        <Button
+            android:id="@+id/button14"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="84dp"
+            android:onClick="decrement"
+            android:text="-"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/button13"
+            app:layout_constraintTop_toBottomOf="@+id/editText34" />
+
+        <TextView
+            android:id="@+id/textView117"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="42dp"
+            android:text="*"
+            android:textColor="#C31111"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/textView120"
+            app:layout_constraintTop_toBottomOf="@+id/textView130" />
+
+        <TextView
+            android:id="@+id/textView118"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="42dp"
+            android:text="*"
+            android:textColor="#C31111"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/textView131"
+            app:layout_constraintTop_toBottomOf="@+id/textView116" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText33"
+            android:layout_width="194dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="45dp"
+            android:fontFamily="@font/alata"
+            android:hint="ex : "
+            android:inputType="number"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button13" />
+
+        <TextView
+            android:id="@+id/textView119"
+            android:layout_width="369dp"
+            android:layout_height="147dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/alata"
+            android:text="Hardware Component"
+            android:textAlignment="center"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView120"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="42dp"
+            android:fontFamily="@font/alata"
+            android:text="Price"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView130" />
+
+        <TextView
+            android:id="@+id/textView121"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/alata"
+            android:text="Quantité"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView131" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText34"
+            android:layout_width="194dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="45dp"
+            android:fontFamily="@font/alata"
+            android:hint="ex : Firefox 21"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText35" />
+
+        <TextView
+            android:id="@+id/textView122"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="45dp"
+            android:fontFamily="@font/alata"
+            android:text="Wattage"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView125" />
+
+        <TextView
+            android:id="@+id/textView123"
+            android:layout_width="8dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="28dp"
+            android:text="*"
+            android:textColor="#C31111"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/textView121"
+            app:layout_constraintTop_toBottomOf="@+id/textView131" />
+
+        <TextView
+            android:id="@+id/textView124"
+            android:layout_width="194dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="63dp"
+            android:layout_marginEnd="45dp"
+            android:fontFamily="@font/alata"
+            android:text="Hardware"
+            android:textAlignment="viewStart"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView119" />
+
+        <TextView
+            android:id="@+id/textView125"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="42dp"
+            android:fontFamily="@font/alata"
+            android:text="Voltage"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView121" />
+
+        <TextView
+            android:id="@+id/textView126"
+            android:layout_width="18dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="32dp"
+            android:fontFamily="@font/alata"
+            android:text="0"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/button13"
+            app:layout_constraintStart_toEndOf="@+id/button14"
+            app:layout_constraintTop_toBottomOf="@+id/editText34" />
+
+        <TextView
+            android:id="@+id/textView127"
+            android:layout_width="190dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="170dp"
+            android:layout_marginEnd="50dp"
+            android:fontFamily="@font/alata"
+            android:text="Champs obligatoire"
+            android:textAlignment="textEnd"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView119" />
+
+        <Button
+            android:id="@+id/logoutbutton_id10"
+            android:layout_width="123dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="65dp"
+            android:layout_marginBottom="40dp"
+            android:background="#FFFFFF"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/alata"
+            android:foregroundTint="#000000"
+            android:onClick="logout"
+            android:shadowColor="#000000"
+            android:text="Logout"
+            android:textColor="#000000"
+            android:textColorLink="#000000"
+            android:textStyle="bold"
+            app:barrierMargin="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_but3" />
+
+        <Button
+            android:id="@+id/logoutbutton_id9"
+            android:layout_width="123dp"
+            android:layout_height="61dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginBottom="40dp"
+            android:background="#FFFFFF"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/alata"
+            android:foregroundTint="#000000"
+            android:onClick="goBack"
+            android:shadowColor="#000000"
+            android:text="Go back"
+            android:textColor="#000000"
+            android:textColorLink="#000000"
+            android:textStyle="bold"
+            app:barrierMargin="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView128"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:text="*"
+            android:textColor="#C31111"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/textView122"
+            app:layout_constraintTop_toBottomOf="@+id/textView125" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText35"
+            android:layout_width="194dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="45dp"
+            android:fontFamily="@font/alata"
+            android:hint="ex : boitier"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView124" />
+
+        <TextView
+            android:id="@+id/textView129"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="42dp"
+            android:text="*"
+            android:textColor="#C31111"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/textView125"
+            app:layout_constraintTop_toBottomOf="@+id/textView121" />
+
+        <TextView
+            android:id="@+id/textView130"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="42dp"
+            android:fontFamily="@font/alata"
+            android:text="Dimensions"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView122" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText36"
+            android:layout_width="194dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="45dp"
+            android:fontFamily="@font/alata"
+            android:hint="ex : "
+            android:inputType="number"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText33" />
+
+        <TextView
+            android:id="@+id/textView131"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="42dp"
+            android:fontFamily="@font/alata"
+            android:text="Description"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView116" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

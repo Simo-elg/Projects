@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollview1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/scroll1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".StorekeeperActivity"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="139dp">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alata"
+            android:text="Create Requester"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="39dp"
+            tools:layout_editor_absoluteY="290dp" />
+
+        <Button
+            android:id="@+id/create_requester2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/alata"
+            android:onClick="create_req"
+            android:text="->"
+            tools:layout_editor_absoluteX="274dp"
+            tools:layout_editor_absoluteY="279dp" />
+
+        <EditText
+            android:id="@+id/update_id3"
+            android:layout_width="140dp"
+            android:layout_height="52dp"
+            android:ems="10"
+            android:fontFamily="@font/alata"
+            android:hint="Update ID : ID"
+            android:inputType="number"
+            tools:layout_editor_absoluteX="39dp"
+            tools:layout_editor_absoluteY="339dp" />
+
+        <Button
+            android:id="@+id/update_requester3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/alata"
+            android:onClick="update_req"
+            android:text="->"
+            tools:layout_editor_absoluteX="274dp"
+            tools:layout_editor_absoluteY="339dp" />
+
+        <EditText
+            android:id="@+id/delete_id3"
+            android:layout_width="140dp"
+            android:layout_height="52dp"
+            android:ems="10"
+            android:fontFamily="@font/alata"
+            android:hint="Delete User : ID"
+            android:inputType="number"
+            tools:layout_editor_absoluteX="39dp"
+            tools:layout_editor_absoluteY="397dp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/alata"
+            android:onClick="delete_user"
+            android:text="delete"
+            tools:layout_editor_absoluteX="274dp"
+            tools:layout_editor_absoluteY="397dp" />
+
+        <Button
+            android:id="@+id/viewData_but2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VOIR TOUS LES CLIENTS"
+            tools:layout_editor_absoluteX="115dp"
+            tools:layout_editor_absoluteY="155dp" />
+
+        <Button
+            android:id="@+id/logoutbutton_id4"
+            android:layout_width="123dp"
+            android:layout_height="61dp"
+            android:background="#000000"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/alata"
+            android:foregroundTint="#000000"
+            android:onClick="logout"
+            android:shadowColor="#000000"
+            android:text="Logout"
+            android:textColor="#000000"
+            android:textColorLink="#000000"
+            android:textStyle="bold"
+            app:barrierMargin="40dp"
+            tools:layout_editor_absoluteX="56dp"
+            tools:layout_editor_absoluteY="640dp" />
+
+        <Button
+            android:id="@+id/logoutbutton_id5"
+            android:layout_width="123dp"
+            android:layout_height="61dp"
+            android:background="#000000"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/alata"
+            android:foregroundTint="#000000"
+            android:onClick="goBack"
+            android:shadowColor="#000000"
+            android:text="Go back"
+            android:textColor="#000000"
+            android:textColorLink="#000000"
+            android:textStyle="bold"
+            app:barrierMargin="40dp"
+            tools:layout_editor_absoluteX="222dp"
+            tools:layout_editor_absoluteY="640dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

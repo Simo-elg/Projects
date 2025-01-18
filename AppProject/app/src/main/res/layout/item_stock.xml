@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollview2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/scroll2"
+        tools:context=".StorekeeperActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <EditText
+            android:id="@+id/update_id2"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="96dp"
+            android:ems="10"
+            android:fontFamily="@font/alata"
+            android:hint="Update commponent : ID"
+            android:inputType="number"
+            app:layout_constraintEnd_toStartOf="@+id/button"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/scrollview3" />
+
+        <Button
+            android:id="@+id/update_requester2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="2dp"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/alata"
+            android:onClick="update_req"
+            android:text="->"
+            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/scrollview3" />
+
+        <EditText
+            android:id="@+id/delete_id2"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="96dp"
+            android:ems="10"
+            android:fontFamily="@font/alata"
+            android:hint="Delete component : ID"
+            android:inputType="number"
+            app:layout_constraintEnd_toStartOf="@+id/button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/update_id2" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="25dp"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/alata"
+            android:onClick="delete_user"
+            android:text="delete"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/update_requester2" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="369dp"
+            android:layout_height="147dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/alata"
+            android:text="Voici le stock disponible !"
+            android:textAlignment="center"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/logoutbutton_id"
+            android:layout_width="123dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="36dp"
+            android:background="#FFFFFF"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/alata"
+            android:foregroundTint="#000000"
+            android:onClick="logout"
+            android:shadowColor="#000000"
+            android:text="Logout"
+            android:textColor="#000000"
+            android:textColorLink="#000000"
+            android:textStyle="bold"
+            app:barrierMargin="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.802"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/delete_id2" />
+
+        <Button
+            android:id="@+id/logoutbutton_id2"
+            android:layout_width="123dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="36dp"
+            android:background="#FFFFFF"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/alata"
+            android:foregroundTint="#000000"
+            android:onClick="goBack"
+            android:shadowColor="#000000"
+            android:text="Go back"
+            android:textColor="#000000"
+            android:textColorLink="#000000"
+            android:textStyle="bold"
+            app:barrierMargin="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.211"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/delete_id2" />
+
+        <ScrollView
+            android:id="@+id/scrollview3"
+            android:layout_width="375dp"
+            android:layout_height="273dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#E2DADA">
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_border"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="TYPE" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_border"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="SOUS-TYPE" />
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_border"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="DESCRIPTION" />
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_border"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="QUANTITÉ" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textViewType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_border"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="type" />
+
+                    <TextView
+                        android:id="@+id/textViewSubType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_border"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="sous-type" />
+
+                    <TextView
+                        android:id="@+id/textViewDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_border"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="description" />
+
+                    <TextView
+                        android:id="@+id/textViewQuantity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/cell_border"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="quantité" />
+                </TableRow>
+
+            </TableLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

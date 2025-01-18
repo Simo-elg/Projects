@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/scroll1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".StorekeeperActivity">
+
+        <EditText
+            android:id="@+id/editTextNumber6"
+            android:layout_width="194dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="45dp"
+            android:ems="10"
+            android:hint="ex : "
+            android:inputType="number"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText31" />
+
+        <Button
+            android:id="@+id/button13"
+            android:layout_width="31dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="70dp"
+            android:text="+"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText34" />
+
+        <TextView
+            android:id="@+id/textView111"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textColor="#C31111"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/textView116"
+            tools:layout_editor_absoluteY="311dp" />
+
+        <TextView
+            android:id="@+id/textView112"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textColor="#C31111"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/textView130"
+            tools:layout_editor_absoluteY="595dp" />
+
+        <TextView
+            android:id="@+id/textView113"
+            android:layout_width="9dp"
+            android:layout_height="18dp"
+            android:text="*"
+            android:textColor="#C31111"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/textView127"
+            tools:layout_editor_absoluteY="187dp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText31"
+            android:layout_width="194dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="45dp"
+            android:hint="ex : "
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText36" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText32"
+            android:layout_width="194dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="45dp"
+            android:hint="ex : "
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNumber6" />
+
+        <TextView
+            android:id="@+id/textView114"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="35dp"
+            android:text="Commentaire"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView120" />
+
+        <TextView
+            android:id="@+id/textView115"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="67dp"
+            android:text="Type"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView119" />
+
+        <TextView
+            android:id="@+id/textView116"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="35dp"
+            android:text="Sous-type"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView115" />
+
+        <Button
+            android:id="@+id/button14"
+            android:layout_width="31dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="17dp"
+            android:text="-"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@+id/editText34"
+            tools:layout_editor_absoluteX="195dp" />
+
+        <TextView
+            android:id="@+id/textView117"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textColor="#C31111"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/textView120"
+            tools:layout_editor_absoluteY="652dp" />
+
+        <TextView
+            android:id="@+id/textView118"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textColor="#C31111"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/textView131"
+            tools:layout_editor_absoluteY="368dp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText33"
+            android:layout_width="194dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="45dp"
+            android:hint="ex : "
+            android:inputType="number"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView126" />
+
+        <TextView
+            android:id="@+id/textView119"
+            android:layout_width="369dp"
+            android:layout_height="147dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/alata"
+            android:text="Please, add a component !"
+            android:textAlignment="center"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView120"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="35dp"
+            android:text="Price"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView130" />
+
+        <TextView
+            android:id="@+id/textView121"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="35dp"
+            android:text="Quantité"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView131" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText34"
+            android:layout_width="194dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="45dp"
+            android:hint="ex : Firefox 21"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText35" />
+
+        <TextView
+            android:id="@+id/textView122"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="35dp"
+            android:text="Licence"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView125" />
+
+        <TextView
+            android:id="@+id/textView123"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textColor="#C31111"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/textView121"
+            tools:layout_editor_absoluteY="425dp" />
+
+        <TextView
+            android:id="@+id/textView124"
+            android:layout_width="194dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="45dp"
+            android:text="Logiciel"
+            android:textAlignment="viewStart"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteY="245dp" />
+
+        <TextView
+            android:id="@+id/textView125"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="35dp"
+            android:text="Version"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView121" />
+
+        <TextView
+            android:id="@+id/textView126"
+            android:layout_width="18dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="32dp"
+            android:text="0"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/button13"
+            app:layout_constraintStart_toEndOf="@+id/button14"
+            app:layout_constraintTop_toBottomOf="@+id/editText34" />
+
+        <TextView
+            android:id="@+id/textView127"
+            android:layout_width="190dp"
+            android:layout_height="18dp"
+            android:text="Champs obligatoire"
+            android:textAlignment="textEnd"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@+id/textView119"
+            tools:layout_editor_absoluteX="179dp" />
+
+        <Button
+            android:id="@+id/logoutbutton_id10"
+            android:layout_width="123dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="65dp"
+            android:layout_marginBottom="40dp"
+            android:background="#000000"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/alata"
+            android:foregroundTint="#000000"
+            android:onClick="logout"
+            android:shadowColor="#000000"
+            android:text="Logout"
+            android:textColor="#000000"
+            android:textColorLink="#000000"
+            android:textStyle="bold"
+            app:barrierMargin="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText32" />
+
+        <Button
+            android:id="@+id/logoutbutton_id9"
+            android:layout_width="123dp"
+            android:layout_height="61dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="40dp"
+            android:background="#000000"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/alata"
+            android:foregroundTint="#000000"
+            android:onClick="goBack"
+            android:shadowColor="#000000"
+            android:text="Go back"
+            android:textColor="#000000"
+            android:textColorLink="#000000"
+            android:textStyle="bold"
+            app:barrierMargin="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText32" />
+
+        <TextView
+            android:id="@+id/textView128"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textColor="#C31111"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/textView122"
+            tools:layout_editor_absoluteY="538dp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText35"
+            android:layout_width="194dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="45dp"
+            android:hint="ex : boitier"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView124" />
+
+        <TextView
+            android:id="@+id/textView129"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textColor="#C31111"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/textView125"
+            tools:layout_editor_absoluteY="481dp" />
+
+        <TextView
+            android:id="@+id/textView130"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="35dp"
+            android:text="Compatibility"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView122" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText36"
+            android:layout_width="194dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="45dp"
+            android:hint="ex : "
+            android:inputType="number"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText33" />
+
+        <TextView
+            android:id="@+id/textView131"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="35dp"
+            android:text="Description"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView116" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
