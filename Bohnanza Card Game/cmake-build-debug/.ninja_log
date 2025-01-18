@@ -1,0 +1,19 @@
+# ninja log v6
+29	834	7544637382746816	CMakeFiles/projet.dir/DiscardPile.cpp.obj	a65d87d7cdbe989c
+36	942	7544637382815025	CMakeFiles/projet.dir/Hand.cpp.obj	3106f500da2813eb
+17	979	7544637382624112	CMakeFiles/projet.dir/Chain.cpp.obj	1f96548f9d0d13bc
+23	1018	7544637382686418	CMakeFiles/projet.dir/Deck.cpp.obj	fd4232ea227b8c58
+3	1025	7544637382485054	CMakeFiles/projet.dir/Card.cpp.obj	c7dd1ffdfca04d4a
+43	1062	7544637382890358	CMakeFiles/projet.dir/main.cpp.obj	df442f0df52b3d3a
+70	1070	7544637383160673	CMakeFiles/projet.dir/TradeArea.cpp.obj	1913fc895fb5a227
+59	1187	7544637383050932	CMakeFiles/projet.dir/Table.cpp.obj	3235a3c01ce373ac
+10	1271	7544637382557389	CMakeFiles/projet.dir/CardFactory.cpp.obj	70d1b71d171c9ec5
+50	1439	7544637382965670	CMakeFiles/projet.dir/Player.cpp.obj	8e822bcd9769c8db
+5	824	7544643325564612	CMakeFiles/projet.dir/Card.cpp.obj	c7dd1ffdfca04d4a
+29	844	7544643325799926	CMakeFiles/projet.dir/DiscardPile.cpp.obj	a65d87d7cdbe989c
+23	863	7544643325745375	CMakeFiles/projet.dir/Deck.cpp.obj	fd4232ea227b8c58
+17	873	7544643325679546	CMakeFiles/projet.dir/Chain.cpp.obj	1f96548f9d0d13bc
+36	896	7544643325867420	CMakeFiles/projet.dir/Hand.cpp.obj	3106f500da2813eb
+62	901	7544643326132368	CMakeFiles/projet.dir/TradeArea.cpp.obj	1913fc895fb5a227
+49	926	7544643326002737	CMakeFiles/projet.dir/Player.cpp.obj	8e822bcd9769c8db
+11	1024	7544643325624595	CMakeFiles/projet.dir/CardFactory.cpp.obj	70d1b71d171c9ec5
